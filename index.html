@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/jfjost-lovable/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="J.F. Jost & Co — Liegenschaften mit Charakter. Seit über 100 Jahren bauen, vermieten und pflegen wir Liegenschaften im Limmattal." />
+    <title>J.F. Jost & Co</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/jfjost-lovable/assets/index-BZptoMCr.js"></script>
+    <link rel="stylesheet" crossorigin href="/jfjost-lovable/assets/index-DNOgKv3W.css">
+  </head>
+  <body>
+    <script>
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').reduce(function(q, range) {
+            var parts = range.split('=');
+            q[parts[0]] = parts.slice(1).join('=').replace(/~and~/g, '&');
+            return q;
+          }, {});
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + (decoded.p || '') +
+            (decoded.q ? '?' + decoded.q : '') +
+            l.hash
+          );
+        }
+      }(window.location));
+    </script>
+    <div id="root"></div>
+  </body>
+</html>
