@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Phone, Mail, MapPin, Instagram } from 'lucide-react'
 
 const navLinks = [
   { to: '/immobilien', label: 'Immobilien' },
@@ -71,6 +71,16 @@ export default function Footer() {
           <p className="text-xs text-gray-500">
             © {new Date().getFullYear()} J.F. Jost & Co. Alle Rechte vorbehalten.
           </p>
+          <a
+            href="https://www.instagram.com/j.f.jost"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-xs text-gray-500 hover:text-white transition-colors duration-200"
+            aria-label="J.F. Jost auf Instagram"
+          >
+            <Instagram className="w-4 h-4" />
+            @j.f.jost
+          </a>
         </div>
       </div>
     </footer>

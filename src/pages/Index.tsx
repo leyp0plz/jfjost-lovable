@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Building2, Wrench, ClipboardList } from 'lucide-react'
+import { ArrowRight, Building2, Wrench, ClipboardList, Instagram } from 'lucide-react'
 
 const stats = [
   { value: '100+', label: 'Jahre Erfahrung' },
@@ -194,6 +194,28 @@ export default function Index() {
               <p className="text-sm text-gray-600 leading-relaxed">{service.description}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Instagram */}
+      <section className="bg-white border-t border-gray-100 py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <a
+            href="https://www.instagram.com/j.f.jost"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex flex-col items-center gap-4 group"
+            aria-label="J.F. Jost auf Instagram folgen"
+          >
+            <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-200">
+              <Instagram className="w-8 h-8 text-white" />
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-1">Folgen Sie uns</p>
+              <p className="text-2xl font-bold text-gray-900 group-hover:text-pink-600 transition-colors duration-200">@j.f.jost</p>
+              <p className="text-sm text-gray-500 mt-1">Einblicke in unsere Liegenschaften und das Limmattal</p>
+            </div>
+          </a>
         </div>
       </section>
 
