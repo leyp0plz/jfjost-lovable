@@ -10,7 +10,7 @@ import Kontakt from './pages/Kontakt'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">
